@@ -3,9 +3,9 @@ import "./App.css";
 import { Header } from "./components/Header";
 import { Layout } from "./components/Layout";
 import { Route, Routes } from "react-router";
-import { Eyeglasses } from "./Views/Eyeglasses";
-import { Sunglasses } from "./Views/Sunglasses";
-import { Lenses } from "./Views/Lenses";
+import { Eyeglasses } from "./views/Eyeglasses";
+import { Sunglasses } from "./views/Sunglasses";
+import { Lenses } from "./views/Lenses";
 
 function App() {
   return (
