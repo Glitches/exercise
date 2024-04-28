@@ -1,8 +1,8 @@
-import React, { ReactNode } from "react";
+import * as React from "react";
 import "./index.css";
 
 export interface CardProps {
-  children?: ReactNode;
+  children?: React.ReactNode;
 }
 
 export const Card: React.FC<CardProps> = ({ children }) => {
