@@ -1,0 +1,9 @@
+.Footer {
+  width: 100%;
+  background-color: black;
+
+  &.sticky {
+    position: fixed;
+    bottom: 0;
+  }
+}
