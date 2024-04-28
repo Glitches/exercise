@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router";
 import { Eyeglasses } from "./views/Eyeglasses";
 import { Sunglasses } from "./views/Sunglasses";
 import { Lenses } from "./views/Lenses";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
           <Route path="/sunglasses" element={<Sunglasses />} />
           <Route path="/lenses" element={<Lenses />} />
         </Routes>
+        <Footer>
+          <a href="/">Subscribe to our newsletter</a>
+          <input></input>
+        </Footer>
       </Layout>
     </div>
   );

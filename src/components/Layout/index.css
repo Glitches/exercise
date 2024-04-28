@@ -1,6 +1,7 @@
 .Layout {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 1vh 0.3vw 0.5vh 0.3vw;
+  gap: 10px 20px;
+  justify-content: left;
+  padding: 1vh 0.3vw 5vh 0.3vw;
 }

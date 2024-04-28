@@ -1,51 +1,47 @@
 .carousel {
-  width: 80%; /* Regola la larghezza del carousel */
-  height: 50px; /* Regola l'altezza del carousel */
-  position: relative; /* Posiziona il carousel relativamente al suo contenitore */
-  overflow: hidden; /* Nasconde le immagini che fuoriescono dal carousel */
+  width: 80%;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
 }
 
 .carousel-inner {
   display: flex;
-  transition: transform 0.5s ease-in-out; /* Aggiunge una transizione fluida al movimento delle immagini */
+  transition: transform 0.5s ease-in-out;
 }
 
 .carousel-item {
-  flex: 1 0 auto; /* Assegna la stessa larghezza a tutti gli elementi */
+  flex: 1 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0; /* Nasconde inizialmente le immagini */
-  transition: opacity 0.5s ease-in-out; /* Aggiunge una transizione fluida alla comparsa delle immagini */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .carousel-item.active {
-  opacity: 1; /* Mostra l'immagine attiva */
-  transform: translateX(0); /* Posiziona l'immagine attiva al centro */
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .carousel-item.prev,
 .carousel-item.next {
-  transform: translateX(
-    -100%
-  ); /* Posiziona le immagini precedenti e successive fuori dal viewport */
+  transform: translateX(-100%);
 }
 
 .carousel-button {
-  position: absolute; /* Posiziona i pulsanti all'interno del carousel */
-  top: 50%; /* Posiziona i pulsanti verticalmente al centro */
-  transform: translateY(
-    -50%
-  ); /* Posiziona i pulsanti verticalmente al centro */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   padding: 10px;
   border: none;
   cursor: pointer;
 }
 
 .carousel-button.prev {
-  left: 0; /* Posiziona il pulsante "Prev" a sinistra */
+  left: 0;
 }
 
 .carousel-button.next {
-  right: 0; /* Posiziona il pulsante "Next" a destra */
+  right: 0;
 }
