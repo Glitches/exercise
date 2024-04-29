@@ -1,9 +1,21 @@
 .Footer {
-  width: 100%;
-  background-color: black;
+  width: 98vw;
+  background-color: darkgrey;
+  min-height: 3rem;
+  flex-wrap: wrap;
+  align-content: top;
+  padding: 0.5rem;
 
   &.sticky {
     position: fixed;
     bottom: 0;
   }
+}
+
+.Footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 100%;
 }

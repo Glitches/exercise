@@ -4,6 +4,7 @@ import { useAPI } from "../hooks/fetch";
 import { Card } from "../components/Card";
 import { Carousel } from "../components/Carousel";
 import { FakeImage } from "../components/FakeImage";
+import { Title } from "../components/Title";
 
 interface BaseItem {
   UPC: string;
@@ -33,10 +34,15 @@ export const Sunglasses: React.FC = () => {
       {data?.map((item, index) => (
         <Card key={`sunglasses-card-${item.UPC}`}>
           <FakeImage />
+          <Title title={item.name} />
           <Carousel
-            items={item.variants.map((item) => ({
-              src: item.name,
-            }))}
+            items={
+              item.variants.length === 0
+                ? [{ src: "BASE MODEL" }]
+                : item.variants.map((variant) => ({
+                    src: "PLACEHOLDER",
+                  }))
+            }
           />
         </Card>
       ))}

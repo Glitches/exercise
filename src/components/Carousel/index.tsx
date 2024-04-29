@@ -22,7 +22,7 @@ export const Carousel: React.FC<CarouselProps> = ({ items }) => {
     <div className="carousel">
       <div className="carousel-inner"></div>
       <button className="carousel-button prev" onClick={prevImage}>
-        Prev
+        &#9668;
       </button>
       {items.map((image, index) => (
         <div
@@ -33,7 +33,7 @@ export const Carousel: React.FC<CarouselProps> = ({ items }) => {
         </div>
       ))}
       <button className="carousel-button next" onClick={nextImage}>
-        Next
+        &#9658;
       </button>
     </div>
   );

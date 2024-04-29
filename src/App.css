@@ -5,3 +5,23 @@
 .App-link {
   color: #61dafb;
 }
+
+.Social,
+.Subscribe {
+  font-size: 1rem;
+}
+
+.Contacts {
+  text-align: right;
+  margin-bottom: 0.2rem;
+  > input {
+    height: 2rem;
+    margin: 0 1rem;
+  }
+  > button {
+    height: 2.5rem;
+  }
+}
+.Social > a {
+  margin-left: 0.4rem;
+}
