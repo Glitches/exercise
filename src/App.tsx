@@ -14,8 +14,9 @@ function App() {
       <Header />
       <Layout>
         <Routes>
-          <Route path="/eyeglasses" element={<Eyeglasses />} />
           <Route path="/sunglasses" element={<Sunglasses />} />
+          <Route path="/" element={<Sunglasses />} />
+          <Route path="/eyeglasses" element={<Eyeglasses />} />
           <Route path="/lenses" element={<Lenses />} />
         </Routes>
         <Footer>
