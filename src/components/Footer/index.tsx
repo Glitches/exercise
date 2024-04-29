@@ -14,7 +14,7 @@ export const Footer: React.FC<FooterProps> = ({ children }) => {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
       const footerHeight = document.querySelector("footer")?.offsetHeight ?? 0;
-      const scrollTop = window.pageYOffset;
+      const scrollTop = window.scrollY;
 
       if (scrollTop + windowHeight >= documentHeight - footerHeight) {
         setIsSticky(true);

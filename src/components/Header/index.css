@@ -1,17 +1,55 @@
 .App-header {
-  background-color: #282c34;
-  color: white;
+  background-color: white;
+  border-bottom: 2px solid black;
+  color: black;
   font-size: calc(10px + 2vmin);
   display: flex;
   justify-content: space-between;
   min-height: 5vh;
   position: sticky;
-  width: 100%;
+  width: 98vw;
+  padding: 0 1rem;
   top: 0;
   z-index: 10;
 }
 
 .App-logo {
-  height: 50px;
-  width: 100px;
+  background-color: gray;
+}
+
+.Buttons-group {
+  font-size: 2rem;
+  padding: 0 0.5rem;
+  display: flex;
+  border-width: 0 0 2px;
+  border-color: transparent;
+
+  > .Link {
+    border-color: transparent;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: inline-block;
+    align-self: flex-end;
+    padding: 0 0.3rem 0.8rem 0.3rem;
+    color: black;
+  }
+  > .active {
+    border-width: 0 0 2px;
+    border-color: black;
+    border-style: solid;
+  }
+}
+
+.Search {
+  padding-bottom: 0.8rem;
+  > input {
+    height: 2rem;
+    margin: 0 1rem;
+  }
+
+  > button {
+    height: 2.4rem;
+    background-color: black;
+    color: white;
+  }
 }
